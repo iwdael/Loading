@@ -12,7 +12,7 @@
         android:layout_weight="1"
         android:layout_height="match_parent">
 
-        <com.blackchopper.loading.LoadingView
+        <com.hacknife.loading.LoadingView
             android:id="@+id/avi"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

@@ -1,0 +1,26 @@
+apply from: './../config.gradle'
+apply plugin: 'com.android.application'
+
+android {
+
+    buildToolsVersion buidConfig.buildToolsVersion
+    compileSdkVersion buidConfig.compileSdkVersion
+    defaultConfig {
+        applicationId "com.iwdael.loading.example"
+        minSdkVersion buidConfig.minSdkVersion
+        targetSdkVersion buidConfig.targetSdkVersion
+        versionCode buidConfig.versionCode
+        versionName buidConfig.versionName
+    }
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
+}
+
+dependencies {
+     implementation dependent.appcompat
+     implementation dependent.appcompat
+     implementation dependent.recyclerview
+    implementation project(':loading')
+}
